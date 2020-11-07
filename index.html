@@ -1,20 +1,59 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Home</title>
     <style>
-      h1 {
-        color: purple;
-
-      }
 
       p {
         color: red;
       }
-
       body {
         background-color: dodgerblue;
+      }
+  <!--selector-->
+      .purple-text {
+        color: rgba(0, 0, 255, .5);
+      }
+      .green-text {
+        color: green;
+      }
+      .important {
+        font-weight: bold;
+      }
+      #lead-paragraph {
+        color: tomato;
+        font-weight: bold;
+      }
+      .important:hover {
+        background-color: #0000FF;
+      }
+
+      a[href="https://imagecomics.com/"] {
+        background-color: orange;
+        padding: 1rem;
+      }
+      a[href="http://storm.wnba.com/"] {
+        background-color: blue;
+      }
+
+      h1 {
+        color: hsla(240, 100%, 100%, .5);
+        border-style: solid;
+        padding: 1rem;
+        border-width: 1px;
+        border-color: red;
+      }
+
+      p.important {
+        width: 75%;
+      }
+
+      img {
+        border-style: dashed;
+        border-color: orange;
+        border-width: 3px;
+        width: 25%;
       }
 
 
@@ -22,6 +61,11 @@
   </head>
   <body>
     <h1>Welcome!</h1>
-    <p>Everything is fine!</p>
+    <p class="purple-text">Everything is fine!</p>
+    <p class="important green-text">No really, the world is not filled with hopelessness and despair, I promise.</p>
+    <p id="lead-paragraph">The world is a happy and sensible place.</p>
+    <a href="http://storm.wnba.com/">National WNBA Champions, Seattle Storm</a>
+    <a href="https://imagecomics.com/">Check out some awesome independent comics</a>
+    <img src="https://placebear.com/300/200" alt="Happy Bears">
   </body>
 </html>
